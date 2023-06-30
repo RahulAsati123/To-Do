@@ -1,0 +1,11 @@
+[build]
+  command = "python build.py"  # Replace with your build command
+  publish = "build/"  # Replace with the directory containing the generated static files
+
+[build.environment]
+  PYTHON_VERSION = "3.11"  # Replace with your desired Python version
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
